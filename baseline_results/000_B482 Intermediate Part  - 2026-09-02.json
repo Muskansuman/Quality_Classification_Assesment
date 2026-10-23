@@ -1,0 +1,91 @@
+{
+  "assessment": {
+    "quality": "Poor",
+    "confidence": "unvalidated",
+    "summary": "LLM call failed (LLM assessment failed (ollama/qwen2.5:7b-instruct). Last error: ValueError('LLM response did not contain a JSON object'). Check Ollama availability and model 'qwen2.5:7b-instruct'.). Showing heuristic fallback — check Ollama is running (`ollama serve`) and the model is pulled.",
+    "strengths": [
+      "Question/interaction signals: 100."
+    ],
+    "improvements": [
+      "Run `./scripts/setup_ollama.sh` or `ollama pull qwen2.5:7b-instruct`.",
+      "Optionally add video frame checks for background and face visibility."
+    ],
+    "observations": [
+      {
+        "time": "06:51.31",
+        "quote": "Alright, have you remembered what are we doing in the last class?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "07:33.56",
+        "quote": "So, Ruthrika, could you tell what do we play here as per the white?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "09:03.82",
+        "quote": "So, what else I can do? If I move the rook?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "09:30.09",
+        "quote": "Is there… If the king goes to G7, then what do you play?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "10:08.14",
+        "quote": "Yeah, but entire reputation is not fine. If the queen goes to H2, if the knight comes in between, then again, what do we play, Josh?",
+        "note": "Sample transcript evidence"
+      }
+    ],
+    "metrics_used": [
+      "question_count=100",
+      "homework_mentions=0",
+      "longest_gap_sec=234.6",
+      "teacher_talk_ratio=0.745"
+    ],
+    "engine": "heuristic",
+    "model": "rules",
+    "llm_error": "LLM assessment failed (ollama/qwen2.5:7b-instruct). Last error: ValueError('LLM response did not contain a JSON object'). Check Ollama availability and model 'qwen2.5:7b-instruct'."
+  },
+  "features": {
+    "duration_sec": 3552.299,
+    "cue_count": 346,
+    "speaker_count": 6,
+    "teacher_speaker": "TSP Abhishek",
+    "teacher_talk_ratio": 0.745,
+    "student_talk_ratio": 0.255,
+    "question_count": 100,
+    "homework_mentions": 0,
+    "intro_signal_count": 0,
+    "camera_background_mentions": 0,
+    "encouragement_count": 1,
+    "longest_gap_sec": 234.6,
+    "avg_cue_duration_sec": 2.37,
+    "words_per_minute": 34.4,
+    "opening_excerpt": "[04:07.95] TSP Abhishek: Hello?\n[04:11.25] Rajiv Menon: You know, so…\n[04:13.12] TSP Abhishek: Yeah, so we'll just start the session in one or two minutes, just wait for the…\n[04:17.25] Rajiv Menon: What? It was just not clear, sir.\n[04:19.52] TSP Abhishek: Yeah, we're just going to start the session in 1 or 2 minutes.\n[06:51.31] TSP Abhishek: Alright, have you remembered what are we doing in the last class?\n[07:01.43] Rajiv Menon: I think we were doing deflection, sir?\n[07:05.96] TSP Abhishek: Here, let me check…\n[07:07.54] Jose Manavalan: Learning Shagun.\n[07:25.12] TSP Abhishek: We can just do some of the puzzles, so…\n[07:28.73] Rajiv Menon: Sir, can you be a little louder?\n[07:31.05] TSP Abhishek: Yeah, so we can just start with the puzzles.\n[07:33.56] TSP Abhishek: So, Ruthrika, could you tell what do we play here as per the white?\n[07:47.35] Rajiv Menon: Sir, is it, queen, H2…\n[07:54.64] TSP Abhishek: Queen, page 2, nope.\n[07:56.87] Rajiv Menon: No?\n[08:11.49] Rajiv Menon: Is it Rook E7?\n[08:18.53] Rajiv Menon: Should I?\n[08:20.02] TSP Abhishek: Rook to E7, no.\n[08:29.05] TSP Abhishek: Anything else?\n[08:34.97] Rajiv Menon: Does it look like this or look, sir?\n[08:38.33] TSP Abhishek: Okay\n[08:47.84] TSP Abhishek: So, here in this case.",
+    "closing_excerpt": "[54:28.32] Rajiv Menon: Peter.\n[54:33.04] Rajiv Menon: Beautiful.\n[55:29.32] Rajiv Menon: Snowing it?\n[55:31.18] TSP Abhishek: Okay, that was a good game.\n[55:33.57] TSP Abhishek: So… Krish, you can just go to the 19th move ones, if you can go.\n[55:47.47] TSP Abhishek: The move when you play the Qg4 check.\n[55:50.59] TSP Abhishek: Would you see that?\n[55:52.35] Krish Aggarwal: Yes, sir.\n[55:53.60] TSP Abhishek: Okay, so there, if the king, king has moved to, like, F6, right?\n[55:59.89] Krish Aggarwal: Yes, sir.\n[56:01.19] TSP Abhishek: Can you find some tactics there?\n[56:06.30] Rajiv Menon: Man?\n[56:07.61] TSP Abhishek: Hello?\n[56:14.45] Krish Aggarwal: Or I could have taken the form.\n[56:16.61] TSP Abhishek: Yeah.\n[56:18.98] TSP Abhishek: You have taken the pawn, because, just let's analyze, if the king goes to E6, sorry, yeah?\n[56:26.04] Rajiv Menon: How did, Silent Storm get 3?\n[56:34.07] TSP Abhishek: Hmm, I need to check, just give me a second.\n[56:36.34] TSP Abhishek: So, if you move the queen to G7, king goes to e6, queen f6 was a mate. If the king goes something like…\n[56:44.61] TSP Abhishek: E8 or anywhere.\n[56:47.13] TSP Abhishek: Then Nf6 was a poke there, and also you are getting the rook which is on H6, where the king goes, like, on the back rank.\n[56:54.87] TSP Abhishek: So there are lots of the stuff which are happening there.\n[56:57.72] Krish Aggarwal: Okay. Yes.\n[56:58.82] TSP Abhishek: And God, and you're getting that phone, so you must need to take it.\n[57:02.25] TSP Abhishek: Okay, and apart from it, all of you are covered…\n[57:04.88] TSP Abhishek: A good advantage after losing the game as well.\n[57:12.07] TSP Abhishek: Yup.\n[57:15.01] TSP Abhishek: And between also, there are some threads coming.\n[57:21.89] TSP Abhishek: Okay. On move number… 25.\n[57:30.33] TSP Abhishek: When the black played the queen to e7.\n[57:34.05] Krish Aggarwal: Yes, sir.\n[57:35.70] TSP Abhishek: Can you able to spot any good move here as well, with the white?\n[58:05.77] TSP Abhishek: Knight to C7.\n[58:14.19] TSP Abhishek: Because, as it's a check, queen also cannot take, it's a 10. So, yeah, wherever the king moves, then you can just exchange the queen. Then if the king takes the queen, then you can go with the…\n[58:24.91] TSP Abhishek: A rook. Because you are up in the advantage, so you can convert it in the endgame, like, you are having two rooks and the knight, and he's only having a rook and the knight.\n[58:34.02] Krish Aggarwal: Perfect.\n[58:35.34] TSP Abhishek: Yeah, and if you're low in time, just in the end game, just wrap up the pieces, don't play, like, I see that you have been exchanging your queens in the, like, end, like, in this 10 to 15 seconds you have been on the timer, right?\n[58:51.39] TSP Abhishek: So, alright then, no issues. So, yeah, I'm just leaving the session, and after the tournament finishes, you guys can leave.\n[58:58.60] TSP Abhishek: And we can finalize the games in the next class as well.\n[59:02.60] Krish Aggarwal: So, yeah, bye everyone, take care.\n[59:06.81] TSP Abhishek: I should…\n[59:09.04] Krish Aggarwal: Mass.\n[59:10.01] TSP Abhishek: Yeah, bye.",
+    "sample_quotes": [
+      "[06:51.31] TSP Abhishek: Alright, have you remembered what are we doing in the last class?",
+      "[07:33.56] TSP Abhishek: So, Ruthrika, could you tell what do we play here as per the white?",
+      "[09:03.82] TSP Abhishek: So, what else I can do? If I move the rook?",
+      "[09:30.09] TSP Abhishek: Is there… If the king goes to G7, then what do you play?",
+      "[10:08.14] TSP Abhishek: Yeah, but entire reputation is not fine. If the queen goes to H2, if the knight comes in between, then again, what do we play, Josh?",
+      "[10:39.10] TSP Abhishek: Alright, so… - okay. So, Yvonne, are you there?",
+      "[12:15.79] TSP Abhishek: 13 years old, okay. So, have you remembered what have you learned in the last class?",
+      "[12:38.60] TSP Abhishek: Here, in this case, again, what could we play here as per the white?",
+      "[14:20.87] TSP Abhishek: Alright, no issues. So, yeah. YUVAN KOLECO, are you there?",
+      "[17:14.71] TSP Abhishek: Like, here. Naythan, what can we play here?",
+      "[18:05.66] TSP Abhishek: So we can go with the tournament directly, or off a bit after some time?",
+      "[20:47.38] TSP Abhishek: up to D6, yeah, that works. And, whatever will… whatever will happen if the king goes to G8?",
+      "[21:30.30] TSP Abhishek: Has everybody understood the last puzzle, or no?",
+      "[25:34.61] TSP Abhishek: Then he will block it with his rook. Then again, what will you play?",
+      "[27:03.00] TSP Abhishek: in case you said, like, what if he moves the bishop to F2, right?"
+    ]
+  },
+  "meta": {
+    "video": "B482 Intermediate Part  - 2026-09-02.mp4",
+    "duration_sec": 3552.299,
+    "transcript_source": "vtt",
+    "segment_count": 346
+  }
+}

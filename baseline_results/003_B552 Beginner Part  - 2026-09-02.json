@@ -1,0 +1,92 @@
+{
+  "assessment": {
+    "quality": "Excellent",
+    "confidence": "unvalidated",
+    "summary": "LLM call failed (LLM assessment failed (ollama/qwen2.5:7b-instruct). Last error: ValueError('LLM response did not contain a JSON object'). Check Ollama availability and model 'qwen2.5:7b-instruct'.). Showing heuristic fallback — check Ollama is running (`ollama serve`) and the model is pulled.",
+    "strengths": [
+      "Homework or assignment mentioned in transcript.",
+      "Question/interaction signals: 241."
+    ],
+    "improvements": [
+      "Run `./scripts/setup_ollama.sh` or `ollama pull qwen2.5:7b-instruct`.",
+      "Optionally add video frame checks for background and face visibility."
+    ],
+    "observations": [
+      {
+        "time": "06:17.79",
+        "quote": "Yes, it was anesthesias made. And, I asked everyone to try it out as well, yes? After homework.",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "44:26.97",
+        "quote": "No problem. Anyone can copy over here. This will be your homework, okay? Just try a few minutes of this link.",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "15:21.45",
+        "quote": "You're welcome, Noel. What happened?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "00:38.90",
+        "quote": "Yes, okay. I'll be… I'll just wait for the other students to join, and then we can start our class, okay?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "06:49.46",
+        "quote": "order said, I think I mentioned last class. Do you remember?",
+        "note": "Sample transcript evidence"
+      }
+    ],
+    "metrics_used": [
+      "question_count=241",
+      "homework_mentions=3",
+      "longest_gap_sec=73.1",
+      "teacher_talk_ratio=0.68"
+    ],
+    "engine": "heuristic",
+    "model": "rules",
+    "llm_error": "LLM assessment failed (ollama/qwen2.5:7b-instruct). Last error: ValueError('LLM response did not contain a JSON object'). Check Ollama availability and model 'qwen2.5:7b-instruct'."
+  },
+  "features": {
+    "duration_sec": 2749.483,
+    "cue_count": 850,
+    "speaker_count": 5,
+    "teacher_speaker": "Bleson Bastian Chiramal",
+    "teacher_talk_ratio": 0.68,
+    "student_talk_ratio": 0.32,
+    "question_count": 241,
+    "homework_mentions": 3,
+    "intro_signal_count": 3,
+    "camera_background_mentions": 0,
+    "encouragement_count": 17,
+    "longest_gap_sec": 73.1,
+    "avg_cue_duration_sec": 2.13,
+    "words_per_minute": 98.7,
+    "opening_excerpt": "[00:22.23] Bleson Bastian Chiramal: Good evening.\n[00:25.25] Bleson Bastian Chiramal: Yes, am I visible?\n[00:32.75] Srilakshmi’s iPhone: Check my laptop.\n[00:36.39] Bleson Bastian Chiramal: Yes, you can see me.\n[00:37.75] Srilakshmi’s iPhone: essence.\n[00:38.90] Bleson Bastian Chiramal: Yes, okay. I'll be… I'll just wait for the other students to join, and then we can start our class, okay?\n[00:46.02] Srilakshmi’s iPhone: Focus.\n[01:01.78] Srilakshmi’s iPhone: Oh, it's arrogant.\n[01:03.99] Srilakshmi’s iPhone: Golden, golden.\n[01:10.73] Bleson Bastian Chiramal: Yes, so Pratt Agathut has joined.\n[01:14.19] Bleson Bastian Chiramal: Eldin has joined, yes.\n[01:25.62] Srilakshmi’s iPhone: You made the kissions.\n[01:41.66] Srilakshmi’s iPhone: No problem today.\n[01:44.21] Srilakshmi’s iPhone: This mountain…\n[01:51.45] Srilakshmi’s iPhone: Oh, no one!\n[03:06.13] Delna francis: I can't hear you, sir!\n[03:19.71] Delna francis: Sahu dit?\n[03:24.59] Bleson Bastian Chiramal: Yes, I'm here, I'm here.\n[03:28.43] Bleson Bastian Chiramal: Can you see me now?\n[03:31.74] Bleson Bastian Chiramal: Yes?\n[03:32.93] Delna francis: Yes.\n[03:34.41] Delna francis: Yes, thank you.\n[03:36.60] Bleson Bastian Chiramal: So, I think there are a few more students to join.\n[03:40.62] Delna francis: Bye.\n[03:41.24] Bleson Bastian Chiramal: Really not joining.\n[03:46.17] Delna francis: Okay? We need a little bit remote.\n[04:11.26] Srilakshmi’s iPhone: I'm joking.\n[04:37.12] Bleson Bastian Chiramal: Okay, Anika has joined, yes?\n[04:41.01] Gunjan: Yes, sir.\n[04:42.51] Bleson Bastian Chiramal: Yes, okay.\n[04:43.94] Bleson Bastian Chiramal: Anita's joined.\n[04:45.95] Bleson Bastian Chiramal: Authoriz has joined.\n[04:48.10] Bleson Bastian Chiramal: Eldin has joined, yes?\n[04:50.89] Delna francis: Yes, Doug!\n[04:53.05] Bleson Bastian Chiramal: Okay, is Eliza here?\n[05:00.05] Bleson Bastian Chiramal: No.\n[05:01.32] Bleson Bastian Chiramal: Elisa's not here.\n[05:07.19] Bleson Bastian Chiramal: Then, Noel is also not here, yes?\n[05:12.32] Bleson Bastian Chiramal: And Senate.\n[05:17.72] Srilakshmi’s iPhone: Expoence around things, Andre, but… Perfect.\n[05:55.91] Bleson Bastian Chiramal: Yes, so what was the last class we took?\n[06:02.67] Bleson Bastian Chiramal: We do that.\n[06:05.66] Bleson Bastian Chiramal: We learned, Special type of checkman, yes.\n[06:12.56] Bleson Bastian Chiramal: What is it?\n[06:15.21] Srilakshmi’s iPhone: Anesthesia State.\n[06:17.79] Bleson Bastian Chiramal: Yes, it was anesthesias made. And, I asked everyone to try it out as well, yes? After homework.\n[06:27.06] Gunjan: Yes, sir.\n[06:28.24] Bleson Bastian Chiramal: Yes, did you do it?\n[06:30.61] Gunjan: Esso.\n[06:31.68] Bleson Bastian Chiramal: Yes, well done, good.\n[06:33.06] Bleson Bastian Chiramal: Good. Has Tataka done that?\n[06:37.10] Srilakshmi’s iPhone: Yes, sir.\n[06:38.53] Bleson Bastian Chiramal: Yes, okay, that's… How about Elden?\n[06:42.09] Bleson Bastian Chiramal: Yes, alright.\n[06:43.19] Delna francis: Yes.\n[06:43.53] Bleson Bastian Chiramal: So, today, We'll be learning a new type of checkmate.\n[06:49.46] Bleson Bastian Chiramal: order said, I think I mentioned last class. Do you remember?",
+    "closing_excerpt": "[40:48.57] Naveen Kumar: I think we should take that night to, eat the food!\n[40:55.56] Delna francis: What?\n[40:57.45] Bleson Bastian Chiramal: E4. F9 to E4?\n[41:00.09] Naveen Kumar: Yeah.\n[41:01.02] Bleson Bastian Chiramal: No, that's not wrong. No, that's not about.\n[41:02.70] Delna francis: Bishop can go to G… And when the rook captures, then another rook will capture.\n[41:13.92] Naveen Kumar: I call a job search.\n[41:14.97] Bleson Bastian Chiramal: And this bishop can go to G8, there's a pawn in the middle.\n[41:17.91] Naveen Kumar: All these courses.\n[41:18.54] Bleson Bastian Chiramal: You cannot jump, right? You cannot jump.\n[41:21.02] Naveen Kumar: Only ask and jumpsu.\n[41:23.67] Bleson Bastian Chiramal: Yes, only, knights can jump. Okay, I'll say the right move is…\n[41:28.23] Naveen Kumar: Yeah, it's a TV.\n[41:29.10] Bleson Bastian Chiramal: 92F7.\n[41:30.30] Naveen Kumar: Sir, that time I told that only, sir…\n[41:34.46] Bleson Bastian Chiramal: You said that? I didn't quite hear. You said E7, you said D7.\n[41:38.94] Naveen Kumar: Yes, sir!\n[41:40.13] Bleson Bastian Chiramal: F7? You said F7?\n[41:41.82] Naveen Kumar: Yes, sir!\n[41:42.75] Bleson Bastian Chiramal: Yes, okay, then that means, well done.\n[41:45.05] Naveen Kumar: That's nuts.\n[41:45.71] Bleson Bastian Chiramal: That is the right one.\n[41:46.83] Naveen Kumar: Nice to…\n[41:47.55] Bleson Bastian Chiramal: UF7 is right now.\n[41:49.01] Naveen Kumar: I'm gone.\n[41:49.36] Bleson Bastian Chiramal: And now, this rook is forced to…\n[41:51.15] Naveen Kumar: Thank you.\n[41:52.01] Bleson Bastian Chiramal: tonight, correct?\n[41:52.83] Naveen Kumar: Yes, sir.\n[41:54.01] Bleson Bastian Chiramal: Yes, and now how can you win?\n[41:55.49] Delna francis: We should take the.\n[41:57.46] Naveen Kumar: Yeah, yeah.\n[41:59.08] Bleson Bastian Chiramal: Yes, correct. We can bring this up, too.\n[42:00.88] Delna francis: Rukian Moon.\n[42:02.49] Bleson Bastian Chiramal: Yes, correct.\n[42:04.34] Bleson Bastian Chiramal: So, well done, Noel.\n[42:07.31] Naveen Kumar: Thank you, sir.\n[42:08.13] Bleson Bastian Chiramal: Anyone can answer, okay?\n[42:10.08] Naveen Kumar: Yes.\n[42:12.41] Bleson Bastian Chiramal: Anyone get up.\n[42:13.49] Naveen Kumar: Take that… Come on, guys, I finally managed to sleep.\n[42:21.70] Delna francis: You're taking a mic?\n[42:23.60] Delna francis: 2…\n[42:24.48] Naveen Kumar: Over here.\n[42:25.02] Delna francis: Hence?\n[42:26.44] Delna francis: Seven.\n[42:27.44] Naveen Kumar: No, sir, we can't…\n[42:29.57] Bleson Bastian Chiramal: Knight cannot go to F7.\n[42:31.26] Naveen Kumar: Just the dress.\n[42:35.21] Gunjan: 2G7.\n[42:37.64] Bleson Bastian Chiramal: I do… No, I cannot go to the G7.\n[42:41.84] Naveen Kumar: Sir, the queen can go to H5 shop.\n[42:47.41] Bleson Bastian Chiramal: Yes, yes. We are doing a big sacrifice here, that is?\n[42:51.03] Bleson Bastian Chiramal: The screen is going to come in.\n[42:53.10] Bleson Bastian Chiramal: Capture this pawn, this tiny pawn on H5, and then once the pawn takes.\n[42:58.96] Naveen Kumar: Maybe you can take the rope to…\n[43:01.63] Delna francis: No, it's.\n[43:03.43] Naveen Kumar: He ain'.\n[43:04.51] Delna francis: Thank you.\n[43:04.92] Bleson Bastian Chiramal: Yes, got it, got it.\n[43:05.77] Delna francis: Sweet!\n[43:07.10] Bleson Bastian Chiramal: G8. G8, yes. You can take the zooke, too.\n[43:11.34] Naveen Kumar: Go to F8, bro.\n[43:13.05] Bleson Bastian Chiramal: G8, yes, yes, correct.\n[43:14.94] Delna francis: Indeed.\n[43:15.70] Bleson Bastian Chiramal: So, what did we learn today?",
+    "sample_quotes": [
+      "[06:17.79] Bleson Bastian Chiramal: Yes, it was anesthesias made. And, I asked everyone to try it out as well, yes? After homework.",
+      "[44:26.97] Bleson Bastian Chiramal: No problem. Anyone can copy over here. This will be your homework, okay? Just try a few minutes of this link.",
+      "[15:21.45] Bleson Bastian Chiramal: You're welcome, Noel. What happened?",
+      "[00:38.90] Bleson Bastian Chiramal: Yes, okay. I'll be… I'll just wait for the other students to join, and then we can start our class, okay?",
+      "[06:49.46] Bleson Bastian Chiramal: order said, I think I mentioned last class. Do you remember?",
+      "[08:19.54] Bleson Bastian Chiramal: Yes, Tatagar, what would be the best move here?",
+      "[08:38.01] Bleson Bastian Chiramal: If the king tries to go here, the knight will capture, yes? Elden.",
+      "[08:42.72] Bleson Bastian Chiramal: Yes, that is correct. So… what happens then? This rook can be placed to H7 and become checkmate, correct?",
+      "[08:59.54] Bleson Bastian Chiramal: We can put our knight here, so what happens?",
+      "[09:16.74] Bleson Bastian Chiramal: If the knight goes here, will the spawn be able to capture?",
+      "[09:33.83] Bleson Bastian Chiramal: Will it open this thing for the king? Will the rook be able to capture this king then?",
+      "[10:03.59] Bleson Bastian Chiramal: And then once the pawn takes, we can do a checkmate here. What'll be the checkmate?",
+      "[10:24.96] Bleson Bastian Chiramal: Yes, this rope can do it, correct? This rope can go… And…",
+      "[11:44.02] Bleson Bastian Chiramal: Okay, maybe 9 to D7 might work? Let's see.",
+      "[11:47.65] Bleson Bastian Chiramal: Now, Knight to D7 doesn't work, the rook will capture. So what will be then?"
+    ]
+  },
+  "meta": {
+    "video": "B552 Beginner Part  - 2026-09-02.mp4",
+    "duration_sec": 2749.483,
+    "transcript_source": "vtt",
+    "segment_count": 850
+  }
+}

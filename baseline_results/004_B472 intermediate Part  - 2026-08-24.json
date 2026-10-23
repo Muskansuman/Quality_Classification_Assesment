@@ -1,0 +1,92 @@
+{
+  "assessment": {
+    "quality": "Excellent",
+    "confidence": "unvalidated",
+    "summary": "LLM call failed (LLM assessment failed (ollama/qwen2.5:7b-instruct). Last error: ValueError('LLM response did not contain a JSON object'). Check Ollama availability and model 'qwen2.5:7b-instruct'.). Showing heuristic fallback — check Ollama is running (`ollama serve`) and the model is pulled.",
+    "strengths": [
+      "Homework or assignment mentioned in transcript.",
+      "Question/interaction signals: 337."
+    ],
+    "improvements": [
+      "Run `./scripts/setup_ollama.sh` or `ollama pull qwen2.5:7b-instruct`.",
+      "Optionally add video frame checks for background and face visibility."
+    ],
+    "observations": [
+      {
+        "time": "47:02.84",
+        "quote": "This is your today's homework, okay?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "01:27.55",
+        "quote": "Oh, piano. Do you know how to play piano?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "01:49.39",
+        "quote": "Any another class, other than chess and piano?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "02:12.58",
+        "quote": "So, how are you… how are you enjoying your holidays?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "02:15.45",
+        "quote": "What are you doing all day? What is the timing there right now?",
+        "note": "Sample transcript evidence"
+      }
+    ],
+    "metrics_used": [
+      "question_count=337",
+      "homework_mentions=3",
+      "longest_gap_sec=10.5",
+      "teacher_talk_ratio=0.535"
+    ],
+    "engine": "heuristic",
+    "model": "rules",
+    "llm_error": "LLM assessment failed (ollama/qwen2.5:7b-instruct). Last error: ValueError('LLM response did not contain a JSON object'). Check Ollama availability and model 'qwen2.5:7b-instruct'."
+  },
+  "features": {
+    "duration_sec": 3359.28,
+    "cue_count": 932,
+    "speaker_count": 7,
+    "teacher_speaker": "Mayuri",
+    "teacher_talk_ratio": 0.535,
+    "student_talk_ratio": 0.465,
+    "question_count": 337,
+    "homework_mentions": 3,
+    "intro_signal_count": 8,
+    "camera_background_mentions": 0,
+    "encouragement_count": 3,
+    "longest_gap_sec": 10.5,
+    "avg_cue_duration_sec": 2.83,
+    "words_per_minute": 129.2,
+    "opening_excerpt": "[00:21.00] Mayuri: Hello, hi, Agni.\n[00:28.03] Aagney Abhilash: Good evening, Ma.\n[00:29.35] Mayuri: Good evening!\n[00:31.99] Aagney Abhilash: Where else have you on?\n[00:33.79] Mayuri: I don't know, they have not joined yet.\n[00:36.84] Mayuri: I'll message in the group.\n[00:44.18] Aagney Abhilash: Where is everybody?\n[00:47.54] Mayuri: Okay, dhanvik is joining back.\n[00:49.76] Mayuri: they're joining.\n[00:56.14] Mayuri: So, how was your day?\n[00:58.28] Mayuri: How was your… okay, 4?\n[01:02.62] Mayuri: What is OP for?\n[01:10.49] Mayuri: I asked you, how was your day?\n[01:13.19] Mayuri: Was it good, bad?\n[01:15.30] Mayuri: Best?\n[01:19.07] Aagney Abhilash: best, because I… we bought a new keyboard.\n[01:23.80] Aagney Abhilash: Not keyboard, like, you know the piano thing?\n[01:27.55] Mayuri: Oh, piano. Do you know how to play piano?\n[01:30.68] Aagney Abhilash: Yeah, I go to classes all there.\n[01:34.02] Mayuri: Oh, how many classes you do in a day?\n[01:36.74] Aagney Abhilash: 2 months.\n[01:40.14] Mayuri: Okay.\n[01:41.80] Mayuri: Yeah, you're good at piano. I should learn from you, then.\n[01:46.13] Aagney Abhilash: No.\n[01:48.14] Mayuri: Okay.\n[01:49.39] Mayuri: Any another class, other than chess and piano?\n[01:53.20] Aagney Abhilash: Mmm… yeah, tissue.\n[01:56.70] Mayuri: Which class?\n[01:58.08] Aagney Abhilash: tuition.\n[01:59.29] Mayuri: Hugh, Shanoke. Your schools have started!\n[02:02.69] Aagney Abhilash: What?\n[02:03.86] Mayuri: There were holidays, right?\n[02:05.37] Aagney Abhilash: No?\n[02:06.78] Aagney Abhilash: This call did not start yet.\n[02:09.37] Mayuri: Well, not Saturday. Okay.\n[02:12.58] Mayuri: So, how are you… how are you enjoying your holidays?\n[02:15.45] Mayuri: What are you doing all day? What is the timing there right now?\n[02:19.65] Aagney Abhilash: 7… 45.\n[02:23.00] Mayuri: AM or p.m.\n[02:25.00] Aagney Abhilash: beam.\n[02:25.99] Aagney Abhilash: Turkey here.\n[02:28.83] Mayuri: Okay, Pearson is joining.\n[02:32.50] Mayuri: Why, everyone is late-free.\n[02:34.86] Mayuri: We are having parents meeting next week, do you know that? The next class, at the next session.\n[02:40.03] Aagney Abhilash: That's cute.\n[02:44.11] Aagney Abhilash: don't see blue.\n[02:48.29] Mayuri: On Wednesday, we'll be having parents meet. Everyone's parents will be there.\n[02:54.60] Aagney Abhilash: Well, my parents are meeting next class.\n[02:58.23] Pearson Sarangthem: Good evening, ma'am!\n[03:00.52] Mayuri: Yeah, good evening, Pearson. But it is compulsory, no, Aagney to join, because this is a parent's meet. Only lasts 15 minutes, not a 2 hours.\n[03:08.54] Aagney Abhilash: Father will be dead.\n[03:10.33] Mayuri: Hmm. At the last 15 minutes, like, after the half an hour.\n[03:15.27] Aagney Abhilash: Yep.\n[03:15.80] Mayuri: 45 minutes class, no? After half an hour.\n[03:18.88] Aagney Abhilash: Okay.\n[03:19.61] Mayuri: At that time.\n[03:20.99] Mayuri: Okay, good evening, Pearson!\n[03:25.06] Mayuri: I'll give these instructions at the end of the class only, about telling your parents about the meeting.\n[03:31.84] Mayuri: From the class also, the class.\n[03:33.49] Aagney Abhilash: We know, we know, we… I also used to go chess classes other than these.\n[03:41.67] Aagney Abhilash: Other than this. This chess clone?\n[03:44.91] Aagney Abhilash: You know… Had our other teachers before.\n[03:49.47] Mayuri: Yeah, before me.\n[03:50.84] Mayuri: Give me.\n[03:51.20] Aagney Abhilash: Before me, before you.\n[03:55.61] Aagney Abhilash: Before the people who… before you, also, there was a class, like, in 2025, I had a class.",
+    "closing_excerpt": "[50:59.53] Mayuri: Do you use filter?\n[51:01.35] Aagney Abhilash: What?\n[51:02.34] Mayuri: You use filter in the Zoom?\n[51:04.74] Aagney Abhilash: I learned.\n[51:06.86] Mayuri: Because when you move now, there is a lipstick mark which moves…\n[51:10.92] Aagney Abhilash: -\n[51:11.86] Mayuri: Yeah.\n[51:12.58] Aagney Abhilash: Oh, I don't know.\n[51:14.44] Aagney Abhilash: No, there's no…\n[51:15.89] Mayuri: Yeah, I can look.\n[51:17.80] Mayuri: There it is.\n[51:18.65] Aagney Abhilash: Let's see…\n[51:21.73] Mayuri: Now, you have.\n[51:22.66] Aagney Abhilash: Bad, dear?\n[51:23.77] Mayuri: Okay, okay, I'm going to end, but just call your par- and tell your parents today, okay? Don't forget.\n[51:30.21] Mayuri: I'm not going to complain anyone, we are just discussing your syllabus, okay?\n[51:34.96] Aagney Abhilash: Oh, gosh.\n[51:36.26] Aagney Abhilash: I'm bad, I'm bad.\n[51:38.52] Mayuri: Hmm, all the best.\n[51:39.60] Aagney Abhilash: Elpro.\n[51:41.49] Mayuri: Let me see who's playing.\n[51:44.23] Aagney Abhilash: P4 is a good move.\n[51:51.12] Aagney Abhilash: Black resigned and I won.\n[51:54.06] Mayuri: Yeah, he won't… he doesn't resign, he didn't play soon.\n[51:59.12] Mayuri: No, yes.\n[51:59.89] Aagney Abhilash: Excuse me.\n[52:00.65] Aagney Abhilash: Rakuten.\n[52:02.45] Aagney Abhilash: That's amazing.\n[52:03.23] Mayuri: I think he got feared because of you. Ragme is going to…\n[52:08.79] Aagney Abhilash: I can't be able to access the world.\n[52:15.26] Aagney Abhilash: Interesting.\n[52:16.21] Mayuri: Midup is staying with the Ruthwik.\n[52:18.37] Mayuri: Let's see…\n[52:25.85] Aagney Abhilash: I only played one move and won. I don't know how.\n[52:30.27] Mayuri: You're caught today, good luck, no?\n[52:32.52] Aagney Abhilash: I have… I hit the world record.\n[52:35.39] Aagney Abhilash: of the.\n[52:35.91] Mayuri: World Record.\n[52:37.73] Aagney Abhilash: I'm in class.\n[52:39.24] Aagney Abhilash: The fastest win.\n[52:41.89] Mayuri: Okay, when… for, after this also, you win fast, as fast as you can, okay? Then I'll give you world record. I'll give you Rini's record.\n[52:52.42] Aagney Abhilash: Oh, you should give me 15 proffies.\n[52:56.46] Mayuri: Hmm.\n[52:57.17] Aagney Abhilash: Just kidding.\n[52:59.78] Aagney Abhilash: Oh, who's all these people I had never saw these?\n[53:03.30] Mayuri: These are from other batch, no? B504.\n[53:05.81] Aagney Abhilash: I'll… B for a joke.\n[53:12.17] Aagney Abhilash: Today, I'm a little… I'm lucky.\n[53:17.53] Mayuri: Okay, I think I should leave now.\n[53:20.08] Aagney Abhilash: Oh, bye.\n[53:22.01] Mayuri: Hmm.\n[53:22.59] Aagney Abhilash: I got.\n[53:23.33] Mayuri: You're rage beating me today.\n[53:25.81] Aagney Abhilash: I got kicked low!\n[53:29.19] Pearson Sarangthem: Absolutely.\n[53:30.67] Aagney Abhilash: But I don't see…\n[53:32.02] Mayuri: What's the best move for black?\n[53:34.00] Pearson Sarangthem: Good morning, I'll be… Hold on one minute.\n[53:37.18] Aagney Abhilash: Locate somehow.\n[53:39.48] Aagney Abhilash: And I got paused, did I remember?\n[53:44.62] Mayuri: You've got cake?\n[53:45.30] Aagney Abhilash: Puran?\n[53:47.19] Mayuri: Wait and see. You're not in the tournament. Yo, you have paused\n[53:51.06] Mayuri: Yeah, you are in the tournament, you're in the third position right now.\n[53:54.60] Aagney Abhilash: Oh. Yes.\n[53:57.75] Aagney Abhilash: I don't know how…\n[53:58.87] Mayuri: See my screen? You're… Aagney Abhilash is your account, right?\n[54:03.09] Aagney Abhilash: Yeah, wait, wait, wait, wait, wait. I can't join!\n[54:08.17] Mayuri: You're in the tuna, and how can I…",
+    "sample_quotes": [
+      "[47:02.84] Mayuri: This is your today's homework, okay?",
+      "[01:27.55] Mayuri: Oh, piano. Do you know how to play piano?",
+      "[01:49.39] Mayuri: Any another class, other than chess and piano?",
+      "[02:12.58] Mayuri: So, how are you… how are you enjoying your holidays?",
+      "[02:15.45] Mayuri: What are you doing all day? What is the timing there right now?",
+      "[02:34.86] Mayuri: We are having parents meeting next week, do you know that? The next class, at the next session.",
+      "[03:15.80] Mayuri: 45 minutes class, no? After half an hour.",
+      "[04:10.03] Mayuri: And another batch, okay. I think before me also, before me joining this, your batch, there was so… no? Who was teaching you?",
+      "[04:24.74] Mayuri: Who is strict more? Am I strict or who is strict?",
+      "[04:57.52] Mayuri: That part it was… oh man, gee, what did Kit do? Was he not attentive during the class?",
+      "[05:15.02] Mayuri: Before me, I think that… because from when I started to take your class, that kid, I think, didn't join. Was it a girl?",
+      "[05:23.32] Mayuri: Let's go by. Because I know about one student who is not joining the class.",
+      "[06:09.11] Mayuri: Because what happens when I start the teaching point, no, everyone joins, and they're like, what is happening, ma'am?",
+      "[07:03.86] Mayuri: One notification come, Aagney joining? Are you willing to enter him in the class?",
+      "[08:05.99] Mayuri: Mother tongue. Which language you speak in your home? That is mother tongue."
+    ]
+  },
+  "meta": {
+    "video": "B472 intermediate Part  - 2026-08-24.mp4",
+    "duration_sec": 3359.28,
+    "transcript_source": "vtt",
+    "segment_count": 932
+  }
+}

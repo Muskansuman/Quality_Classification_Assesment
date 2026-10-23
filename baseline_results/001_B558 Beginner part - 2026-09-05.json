@@ -1,0 +1,91 @@
+{
+  "assessment": {
+    "quality": "Good",
+    "confidence": "unvalidated",
+    "summary": "LLM call failed (LLM assessment failed (ollama/qwen2.5:7b-instruct). Last error: ValueError('LLM response did not contain a JSON object'). Check Ollama availability and model 'qwen2.5:7b-instruct'.). Showing heuristic fallback — check Ollama is running (`ollama serve`) and the model is pulled.",
+    "strengths": [
+      "Question/interaction signals: 213."
+    ],
+    "improvements": [
+      "Run `./scripts/setup_ollama.sh` or `ollama pull qwen2.5:7b-instruct`.",
+      "Optionally add video frame checks for background and face visibility."
+    ],
+    "observations": [
+      {
+        "time": "04:36.02",
+        "quote": "Good morning, Navika, how are you?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "04:14.53",
+        "quote": "Today, we learn how to play with the king, pawn, and queen, okay?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "04:46.97",
+        "quote": "Today we learn discussing movement, okay?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "04:51.22",
+        "quote": "can go every direction, but in just one step, each box, okay? Caught it, guys?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "05:20.79",
+        "quote": "In the game, we just collect the stars, right, step by step, okay? Like, how you spell the king, right? Take a star, like this. Okay.",
+        "note": "Sample transcript evidence"
+      }
+    ],
+    "metrics_used": [
+      "question_count=213",
+      "homework_mentions=0",
+      "longest_gap_sec=63.8",
+      "teacher_talk_ratio=0.819"
+    ],
+    "engine": "heuristic",
+    "model": "rules",
+    "llm_error": "LLM assessment failed (ollama/qwen2.5:7b-instruct). Last error: ValueError('LLM response did not contain a JSON object'). Check Ollama availability and model 'qwen2.5:7b-instruct'."
+  },
+  "features": {
+    "duration_sec": 2770.84,
+    "cue_count": 633,
+    "speaker_count": 4,
+    "teacher_speaker": "Pranav Kumar",
+    "teacher_talk_ratio": 0.819,
+    "student_talk_ratio": 0.181,
+    "question_count": 213,
+    "homework_mentions": 0,
+    "intro_signal_count": 3,
+    "camera_background_mentions": 0,
+    "encouragement_count": 17,
+    "longest_gap_sec": 63.8,
+    "avg_cue_duration_sec": 2.83,
+    "words_per_minute": 92.5,
+    "opening_excerpt": "[02:19.27] Pranav Kumar: Hello, Edlin.\n[02:20.98] Edlin Cicile Shanet: Good one, Fa.\n[02:23.99] Pranav Kumar: How are you?\n[02:27.42] Edlin Cicile Shanet: I'm fine. What about you?\n[02:30.77] Pranav Kumar: I'm also good.\n[03:35.70] Pranav Kumar: Hello, Navika.\n[03:49.01] Pranav Kumar: Hello.\n[04:04.99] Pranav Kumar: Okay, Eddie, today we learned.\n[04:13.04] Pranav Kumar: book.\n[04:14.53] Pranav Kumar: Today, we learn how to play with the king, pawn, and queen, okay?\n[04:18.76] Edlin Cicile Shanet: Mr.\n[04:22.48] Pranav Kumar: Firstly, we learn coinking movement.\n[04:26.27] Pranav Kumar: King, value-wise, he have an infinity point, but movement-wise, he's just going… One step.\n[04:34.57] dheeraj.sharma: Good morning, sir!\n[04:36.02] Pranav Kumar: Good morning, Navika, how are you?\n[04:42.72] Pranav Kumar: How are you?\n[04:44.58] dheeraj.sharma: That's fine.\n[04:45.64] Pranav Kumar: Okay.\n[04:46.97] Pranav Kumar: Today we learn discussing movement, okay?\n[04:51.22] Pranav Kumar: can go every direction, but in just one step, each box, okay? Caught it, guys?\n[04:57.91] Edlin Cicile Shanet: Yes, Seth.\n[04:58.77] Pranav Kumar: Logan.\n[05:12.62] Pranav Kumar: Okay…\n[05:19.04] Pranav Kumar: we learn.\n[05:20.79] Pranav Kumar: In the game, we just collect the stars, right, step by step, okay? Like, how you spell the king, right? Take a star, like this. Okay.\n[05:34.29] Pranav Kumar: Okay, tell me your move, Edley.\n[05:37.14] Edlin Cicile Shanet: One second, sir.\n[05:38.66] Pranav Kumar: Hmm.\n[05:40.99] Edlin Cicile Shanet: One second, please.\n[05:42.94] Pranav Kumar: Yeah, yeah, very content.\n[05:46.93] Edlin Cicile Shanet: Move the king to D2.\n[05:49.02] Pranav Kumar: Yeah, I think two details. Edlin?\n[05:51.43] Pranav Kumar: Oh, sorry. Navika?\n[05:54.56] dheeraj.sharma: Yes, sir?\n[05:55.47] Pranav Kumar: Tell me your move.\n[05:57.73] dheeraj.sharma: Sir, then the team should move to…\n[06:02.25] Pranav Kumar: True.\n[06:06.02] dheeraj.sharma: E3!\n[06:08.74] Pranav Kumar: Okay, excellent move, well played. Edlin?\n[06:12.43] Edlin Cicile Shanet: Moda King 2, D3.\n[06:16.54] Pranav Kumar: Okay, good.\n[06:18.68] Edlin Cicile Shanet: Excellent.\n[06:19.52] Pranav Kumar: Navika?\n[06:21.66] dheeraj.sharma: Then it turned to be the C2.\n[06:25.39] Pranav Kumar: Okay, great.\n[06:29.10] Pranav Kumar: Okay, Edlin?\n[06:32.75] Edlin Cicile Shanet: King 2, D6.\n[06:35.94] Pranav Kumar: Navika?\n[06:38.12] dheeraj.sharma: 2, C, 5…\n[06:40.69] Pranav Kumar: Meeting to see that.\n[06:42.31] Pranav Kumar: Edlin?\n[06:43.86] Edlin Cicile Shanet: Be fair?\n[06:45.70] Pranav Kumar: Good nerve.\n[06:47.13] Pranav Kumar: No? Navika?\n[06:48.91] dheeraj.sharma: Douse, it should move to.\n[06:51.93] dheeraj.sharma: C4?\n[06:54.07] Pranav Kumar: Yeah, King to C4, then.",
+    "closing_excerpt": "[41:05.90] Pranav Kumar: But the knight doesn't just have the ability to move to this square, it could also move 1, 2, turn, and make a backward L. That's another option.\n[41:15.28] Pranav Kumar: Okay, let's add a few, we've already said, F3 and D3. The knight could also move up 2 and over 1, up to and over 1 the other way. The knight could also move sideways and then up, sideways and then down, always moving one, two, turn, and you can probably figure out the completion of this pattern. Drum roll, please.\n[41:35.37] Pranav Kumar: I don't know if we got a drum roll, but knight can go to C4. Those are the 8 different squares the knight can move to. Now, one trick about the knight…\n[41:43.83] Pranav Kumar: Unlike the bishop, the knight always changes colors. The knight's on a blue square, we call it a dark square. If it moves 1-2 turn, it's on a light square. One, two, turn, a dark square, one, two turn, a light square. And if you don't believe me, well, keep moving the knight, and eventually, you'll get it.\n[42:00.48] Pranav Kumar: The knight has a special power that no other piece has. The knight can jump over things. It only captures when it lands on something.\n[42:08.35] Pranav Kumar: If I put a black pawn on F6, the knight could jump over that pawn, just like it's not even there.\n[42:13.69] Pranav Kumar: 1?\n[42:14.78] Pranav Kumar: To turn, and it completely ignores the pawn.\n[42:18.33] Pranav Kumar: Now, if the black pawn moves forward one square, the knight can move one, two, turn, and because it landed on the pawn, that's how the knight captures. The knight can jump over anything, its own pieces, the enemy pieces, kings, rooks, bishops, other knights, but it can only capture pieces that it lands on.\n[42:36.87] Pranav Kumar: Now that we know how all the pieces move, we've got to figure out what's the goal of this game. The goal of this game is actually to put the enemy king in danger so he can't get out of danger. Let's go ahead and learn a couple new words. If it's white's move here, white can move the rook sideways.\n[42:53.22] Pranav Kumar: and stop on c5. And everybody watching the video can see the rook is aiming at the king. When the king's in danger, we call it check. Now, the word checkmate sounds similar, but that's a special kind of check, we'll get to that in a minute.\n[43:05.50] Pranav Kumar: When the king is in danger, when you're in check.\n[43:08.13] Pranav Kumar: have to get out of check on the very next turn, you don't have a choice. There are 3 ways to get out of check.\n[43:14.97] Pranav Kumar: I like to use the term C…\n[43:17.47] Pranav Kumar: No, we're not saving anybody's life today, we're just saving the king's life. C stands for capture. If you capture the piece that's putting you in check, obviously, your king will be safe. You've removed the danger. In this position, that's clearly the best move. The bishop can move diagonal.\n[43:35.17] Pranav Kumar: Land on top of the rook.\n[43:37.08] Pranav Kumar: And when the rook's gone, the black king is not in check. In fact, you're probably figuring out right now, it's actually the white king that would be in check.\n[43:44.25] Pranav Kumar: Let's go back, though, and take a look at another option for black.\n[43:48.83] Pranav Kumar: Rook comes over to C5.\n[43:50.56] Pranav Kumar: The P in CPR stands for protect. That means to put a piece in the way, or to block. In this position, the knight can come to the king's rescue by moving 1, 2,",
+    "sample_quotes": [
+      "[04:36.02] Pranav Kumar: Good morning, Navika, how are you?",
+      "[04:14.53] Pranav Kumar: Today, we learn how to play with the king, pawn, and queen, okay?",
+      "[04:46.97] Pranav Kumar: Today we learn discussing movement, okay?",
+      "[04:51.22] Pranav Kumar: can go every direction, but in just one step, each box, okay? Caught it, guys?",
+      "[05:20.79] Pranav Kumar: In the game, we just collect the stars, right, step by step, okay? Like, how you spell the king, right? Take a star, like this. Okay.",
+      "[06:08.74] Pranav Kumar: Okay, excellent move, well played. Edlin?",
+      "[07:29.60] Pranav Kumar: We know queen value is 9 points, and she's traveling only files, ranks, and diagonals, okay?",
+      "[08:34.17] Pranav Kumar: So, you have to mention the queen also. Just mention the boxes, okay? Say, queen H2, then Queen H3, like this. Okay? Now, try again.",
+      "[08:50.18] Pranav Kumar: to interact with it, okay, that is also great. AdLib?",
+      "[12:49.52] Pranav Kumar: Killing power only one step diagonally, okay? Everyone got it?",
+      "[13:03.98] Pranav Kumar: you reach the opponent in the opponent's last rank, so you can promote anything exception, again, pawn and King, okay? Like, I'm promoting here, Knight, okay? Simple.",
+      "[13:32.33] Pranav Kumar: Your pawn against the opponent last rank, so you can promote anything, exception, not king again, and pawn again, okay? You can simply promote queen, knight, Bishop, and Rook only, okay?",
+      "[13:55.00] Pranav Kumar: this star. I can also promote the V shape and collect star diagonally, okay?",
+      "[13:59.96] Pranav Kumar: Now, guys, tell me your move, one by one. Edlin?",
+      "[14:19.66] Pranav Kumar: We also mentioned the pawn, pawn to effect. Pawn to F8 equals to which piece you will promote here?"
+    ]
+  },
+  "meta": {
+    "video": "B558 Beginner part - 2026-09-05.mp4",
+    "duration_sec": 2770.84,
+    "transcript_source": "vtt",
+    "segment_count": 633
+  }
+}

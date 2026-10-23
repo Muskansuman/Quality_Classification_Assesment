@@ -1,0 +1,91 @@
+{
+  "assessment": {
+    "quality": "Good",
+    "confidence": "unvalidated",
+    "summary": "LLM call failed (LLM assessment failed (ollama/qwen2.5:7b-instruct). Last error: ValueError('LLM response did not contain a JSON object'). Check Ollama availability and model 'qwen2.5:7b-instruct'.). Showing heuristic fallback — check Ollama is running (`ollama serve`) and the model is pulled.",
+    "strengths": [
+      "Question/interaction signals: 303."
+    ],
+    "improvements": [
+      "Run `./scripts/setup_ollama.sh` or `ollama pull qwen2.5:7b-instruct`.",
+      "Optionally add video frame checks for background and face visibility."
+    ],
+    "observations": [
+      {
+        "time": "00:37.61",
+        "quote": "Vitansh, okay, yeah. Vitansh, can you also turn on your camera?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "04:07.78",
+        "quote": "Avan, can you please turn on your camera microphone?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "17:12.80",
+        "quote": "So, background meat happens to the last row in the chessboard, okay? So, the king will be trapped by its, by maybe our pieces or its own pieces in the…",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "34:24.00",
+        "quote": "Yes, yes. Okay, Shuva got it. Avan, can you turn on the camera?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "51:14.34",
+        "quote": "And that will be a checkmate. Okay. So is this background meet completely clear to everyone?",
+        "note": "Sample transcript evidence"
+      }
+    ],
+    "metrics_used": [
+      "question_count=303",
+      "homework_mentions=0",
+      "longest_gap_sec=27.5",
+      "teacher_talk_ratio=0.698"
+    ],
+    "engine": "heuristic",
+    "model": "rules",
+    "llm_error": "LLM assessment failed (ollama/qwen2.5:7b-instruct). Last error: ValueError('LLM response did not contain a JSON object'). Check Ollama availability and model 'qwen2.5:7b-instruct'."
+  },
+  "features": {
+    "duration_sec": 3231.083,
+    "cue_count": 973,
+    "speaker_count": 9,
+    "teacher_speaker": "Ayswarya Joseph",
+    "teacher_talk_ratio": 0.698,
+    "student_talk_ratio": 0.302,
+    "question_count": 303,
+    "homework_mentions": 0,
+    "intro_signal_count": 0,
+    "camera_background_mentions": 10,
+    "encouragement_count": 3,
+    "longest_gap_sec": 27.5,
+    "avg_cue_duration_sec": 2.39,
+    "words_per_minute": 104.1,
+    "opening_excerpt": "[00:21.02] Ayswarya Joseph: Hello, Gautam!\n[00:23.36] Gautham: Hi, Mom.\n[00:24.55] Ayswarya Joseph: Okay, who else wants to join now?\n[00:30.23] neha’s iPhone: This is Midranch.\n[00:32.83] Ayswarya Joseph: Can you tell me once again?\n[00:36.46] neha’s iPhone: Midharj.\n[00:37.61] Ayswarya Joseph: Vitansh, okay, yeah. Vitansh, can you also turn on your camera?\n[00:43.80] neha’s iPhone: Yes.\n[00:46.82] Ayswarya Joseph: Okay, so hi, Midash!\n[00:49.53] Ayswarya Joseph: Okay, just a minute. I'll also turn my camera on just a minute.\n[00:54.37] Gautham: Ma'am?\n[00:55.11] Ayswarya Joseph: Yes?\n[00:56.59] Gautham: Half an hour ago, I was playing the chess match with my father, and I checkmated him in the last 30 seconds.\n[01:07.32] Ayswarya Joseph: Oh, very good. Very nice.\n[01:10.04] Ayswarya Joseph: Okay, hello, Shratik!\n[01:12.75] Shrithik: Bye.\n[01:13.84] Shrithik: Miss, can you share the Zoom ID?\n[01:16.10] Ayswarya Joseph: Yes, ma'am.\n[01:18.78] Shrithik: Okay.\n[01:46.97] Ayswarya Joseph: Yes, ma'am, I have shared it.\n[02:11.56] Ayswarya Joseph: Okay.\n[02:12.98] Ayswarya Joseph: Come on.\n[02:14.61] Ayswarya Joseph: Video, it's stuck.\n[02:34.59] Ayswarya Joseph: Yeah, hi, everyone!\n[02:36.65] Ayswarya Joseph: Okay, so your name is Midansh, right?\n[02:40.53] neha’s iPhone: Yes.\n[02:41.43] Ayswarya Joseph: Okay, can you tell the spelling, Nidanj?\n[02:44.35] neha’s iPhone: And me?\n[02:45.52] Ayswarya Joseph: Amy?\n[02:47.10] neha’s iPhone: DH.\n[02:48.13] Ayswarya Joseph: DH?\n[02:49.41] neha’s iPhone: And…\n[02:50.65] Ayswarya Joseph: AM?\n[02:51.89] neha’s iPhone: S H.\n[02:53.22] Ayswarya Joseph: S-H-O-K-E-N-I-T-A-N-S-H-O.\n[02:57.80] neha’s iPhone: 12 years.\n[02:58.88] Ayswarya Joseph: Yeah, 12 years old, okay. And Middaj, do you know about Czech and Czech meat?\n[03:05.50] neha’s iPhone: Yes.\n[03:06.16] Ayswarya Joseph: Okay, very good.\n[03:07.60] Ayswarya Joseph: Okay, so yeah, here we have some more other friends too, yeah.\n[03:13.01] Ayswarya Joseph: So, everyone, can you all say hi to Midash?\n[03:17.06] Gautham: Bye!\n[03:17.56] shrithik: Hi.\n[03:19.92] neha’s iPhone: Hello.\n[03:21.40] Ayswarya Joseph: Yes.\n[03:22.38] Ayswarya Joseph: Hello, Shua!\n[03:25.12] shilaf: Hi.\n[03:26.42] Ayswarya Joseph: Okay, how was your day?\n[03:29.72] shilaf: Good. Good.\n[03:30.62] Ayswarya Joseph: Okay, so who is drawing with the name Nisha?\n[03:36.82] Nisha: Namaste, namaste.\n[03:38.76] Ayswarya Joseph: Namaste. Okay. Hi, Namaste.\n[03:41.70] Nisha: Hello, ma'am.\n[03:42.68] Ayswarya Joseph: How was your day?\n[03:44.24] Nisha: Ma'am, it was good.\n[03:46.59] Ayswarya Joseph: Okay. So, yeah.\n[03:49.31] Ayswarya Joseph: Avan is joining. Hello, Avan!\n[03:55.13] Ayswarya Joseph: Hello, everyone!\n[03:56.72] Gautham: Oh, oh, it's…\n[04:00.09] Ayswarya Joseph: One, can you hear me?\n[04:02.44] Gautham: You too. Thank you.\n[04:04.42] Gautham: Oh, my gosh.\n[04:07.78] Ayswarya Joseph: Avan, can you please turn on your camera microphone?\n[04:10.91] Ayswarya Joseph: Okay, okay, yeah.\n[04:13.51] Ayswarya Joseph: Okay, then one can try one thing, you can just leave and try to join once again. I hope then it will work.\n[04:21.25] Gautham: Thank you.\n[04:24.98] Gautham: But…\n[04:27.94] Ayswarya Joseph: Okay.\n[04:28.43] Gautham: Oh!\n[04:28.99] Ayswarya Joseph: Okay.\n[04:35.48] Ayswarya Joseph: Hello, Atmik!\n[04:42.72] Ayswarya Joseph: Yeah. Hello, Atmik!\n[04:46.60] Ayswarya Joseph: You're on mute. Can you please unmute?\n[04:52.52] Ayswarya Joseph: Yeah. Hello, how was your day?\n[04:55.31] user: Good.",
+    "closing_excerpt": "[48:51.03] Awaan: Queen.\n[48:53.11] Awaan: So… 3.\n[48:55.18] Awaan: F2?\n[48:56.57] Ayswarya Joseph: Queen to F2, then this queen will come and capture you.\n[49:00.74] Awaan: And move that rook to F2.\n[49:03.38] Ayswarya Joseph: Then there is no checkmate there, right? The king will capture it.\n[49:09.70] Ayswarya Joseph: So, here the problem is this queen, right?\n[49:12.18] Awaan: Rock to D.\n[49:14.78] Awaan: Fun.\n[49:15.50] Ayswarya Joseph: Perfect. First, we'll move the roof to D1, then…\n[49:19.14] Awaan: Then move the queen to F2.\n[49:24.69] Ayswarya Joseph: Perfect, very good, and then?\n[49:27.93] Awaan: Move the queen to F1.\n[49:31.63] Ayswarya Joseph: Very good, and then…\n[49:33.25] Awaan: Move the rock to F1.\n[49:35.70] Ayswarya Joseph: Very good. Then Namaste, can you try this one? You're playing from the white side.\n[49:41.60] Awaan: Ma'am, when does the class finish?\n[49:43.79] Ayswarya Joseph: Yes, it's… oh, it's gonna be… it's gonna… it's just one minute. This one will be the last one.\n[49:49.87] Ayswarya Joseph: I think I gave chances to everyone, I don't miss anyone, right?\n[49:53.73] Ayswarya Joseph: Okay, Namaste, can you try this one?\n[49:56.81] Nisha: Hello, Luke. So…\n[49:58.92] Awaan: Okay.\n[50:00.99] Nisha: Eat!\n[50:01.44] shilaf: Got it.\n[50:02.66] Ayswarya Joseph: Oh.\n[50:03.28] Awaan: Okay.\n[50:03.86] Nisha: GA.\n[50:05.46] Awaan: Okay.\n[50:05.82] Ayswarya Joseph: Ishw.\n[50:07.04] Nisha: This look.\n[50:07.97] Awaan: Please, can we go to the group?\n[50:11.46] Ayswarya Joseph: create here.\n[50:12.60] Nisha: Both.\n[50:13.40] Ayswarya Joseph: You're from the right side.\n[50:15.18] Nisha: Wait a second.\n[50:22.94] Nisha: I can move the queen to F8.\n[50:25.60] Ayswarya Joseph: If we move to off-speed, we don't have any backup here, right?\n[50:29.43] Awaan: So we.\n[50:30.93] Ayswarya Joseph: is which way we can move to give it.\n[50:33.69] Awaan: Damien.\n[50:37.62] Ayswarya Joseph: What about E8 Square?\n[50:40.63] Nisha: Yes.\n[50:41.79] Ayswarya Joseph: Then what will they do?\n[50:44.61] Nisha: Then.\n[50:46.46] Ayswarya Joseph: How they can get out of the check?\n[50:48.87] Ayswarya Joseph: by capturing with the\n[50:54.52] Ayswarya Joseph: With this rook, they can capture it with this rook, right?\n[50:58.18] Nisha: Thanks.\n[50:58.88] Ayswarya Joseph: After that, what we can do…\n[51:01.11] Nisha: We can capture their look with our look.\n[51:03.55] Ayswarya Joseph: Very good. We can capture them with our rope. Very good. So, if they block it with the queen like this, what we can do, Namaskwi?\n[51:12.19] Nisha: We can capture the queen.\n[51:14.34] Ayswarya Joseph: And that will be a checkmate. Okay. So is this background meet completely clear to everyone?\n[51:20.66] shilaf: Yes, ma'am.\n[51:22.18] Ayswarya Joseph: I give chances to everyone. I give at least 3 chances to everyone, right?\n[51:26.85] Awaan: Yes.\n[51:27.97] Ayswarya Joseph: Okay, so, with this, can we just wind up the today's class, everyone?\n[51:32.96] Awaan: Yay.\n[51:33.37] user: Yes.\n[51:33.96] Ayswarya Joseph: Okay, yeah. So, Mithaj, do you have a leeches account, Mithaj?\n[51:42.17] neha’s iPhone: Excuse me, ma'am, can you repeat it again?\n[51:45.15] Ayswarya Joseph: Do you have a Litas account, Madanj?\n[51:47.37] Awaan: Ma'am?\n[51:49.34] neha’s iPhone: I have an account.\n[51:50.46] Awaan: I don't get.\n[51:53.32] Ayswarya Joseph: Can you say once again, Madash, do you have a Leeches account?\n[51:57.43] Awaan: Bye, now I'm.\n[51:58.56] neha’s iPhone: I have an account on chess.com.",
+    "sample_quotes": [
+      "[00:37.61] Ayswarya Joseph: Vitansh, okay, yeah. Vitansh, can you also turn on your camera?",
+      "[04:07.78] Ayswarya Joseph: Avan, can you please turn on your camera microphone?",
+      "[17:12.80] Ayswarya Joseph: So, background meat happens to the last row in the chessboard, okay? So, the king will be trapped by its, by maybe our pieces or its own pieces in the…",
+      "[34:24.00] Ayswarya Joseph: Yes, yes. Okay, Shuva got it. Avan, can you turn on the camera?",
+      "[51:14.34] Ayswarya Joseph: And that will be a checkmate. Okay. So is this background meet completely clear to everyone?",
+      "[31:25.74] Ayswarya Joseph: Mitansh, can you turn on the camera?",
+      "[41:53.98] Ayswarya Joseph: Avan, can you turn on the camera?",
+      "[02:58.88] Ayswarya Joseph: Yeah, 12 years old, okay. And Middaj, do you know about Czech and Czech meat?",
+      "[03:13.01] Ayswarya Joseph: So, everyone, can you all say hi to Midash?",
+      "[03:30.62] Ayswarya Joseph: Okay, so who is drawing with the name Nisha?",
+      "[05:24.09] Ayswarya Joseph: No, we have the class on Thursday, right? Monday and Thursday.",
+      "[05:31.10] Ayswarya Joseph: So, yeah, Midansh, okay, we usually start the session by doing a puzzle race, okay? Do you know what a puzzle race, Midansh?",
+      "[05:42.33] Ayswarya Joseph: Okay, so let's start the class by doing the parcel race. So, I'll give you guys the link for the race, okay?",
+      "[06:09.19] Ayswarya Joseph: Yeah, I have shared the link in the chat. Can you all join using that link for the puzzle race?",
+      "[06:47.43] Ayswarya Joseph: Okay, so I'll start the race now. It is like, you will get a puzzle there, and after that, after finding the answer for that puzzle, you will get the next puzzle like that. So, in all this set, you guys will be playing from the white side, okay? I'm gonna start it now."
+    ]
+  },
+  "meta": {
+    "video": "B491 Beginner Part  - 2026-06-29.mp4",
+    "duration_sec": 3231.083,
+    "transcript_source": "vtt",
+    "segment_count": 973
+  }
+}

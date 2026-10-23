@@ -1,0 +1,7 @@
+video,true_label,predicted_label,confidence,engine,model,error
+/home/hitech/Downloads/dataset/classrecordings/weak/B482 Intermediate Part  - 2026-09-02.mp4,Poor,Poor,unvalidated,heuristic,rules,
+/home/hitech/Downloads/dataset/classrecordings/weak/B558 Beginner part - 2026-09-05.mp4,Poor,Good,unvalidated,heuristic,rules,
+/home/hitech/Downloads/dataset/classrecordings/good/B435 intermediate Part  - 2026-07-25.mp4,Good,Average,unvalidated,heuristic,rules,
+/home/hitech/Downloads/dataset/classrecordings/good/B552 Beginner Part  - 2026-09-02.mp4,Good,Excellent,unvalidated,heuristic,rules,
+/home/hitech/Downloads/dataset/classrecordings/excellent/B472 intermediate Part  - 2026-08-24.mp4,Excellent,Excellent,unvalidated,heuristic,rules,
+/home/hitech/Downloads/dataset/classrecordings/excellent/B491 Beginner Part  - 2026-06-29.mp4,Excellent,Good,unvalidated,heuristic,rules,

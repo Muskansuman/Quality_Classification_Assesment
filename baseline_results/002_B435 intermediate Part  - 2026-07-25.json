@@ -1,0 +1,91 @@
+{
+  "assessment": {
+    "quality": "Average",
+    "confidence": "unvalidated",
+    "summary": "LLM call failed (LLM assessment failed (ollama/qwen2.5:7b-instruct). Last error: ValueError('LLM response did not contain a JSON object'). Check Ollama availability and model 'qwen2.5:7b-instruct'.). Showing heuristic fallback — check Ollama is running (`ollama serve`) and the model is pulled.",
+    "strengths": [
+      "Question/interaction signals: 90."
+    ],
+    "improvements": [
+      "Run `./scripts/setup_ollama.sh` or `ollama pull qwen2.5:7b-instruct`.",
+      "Optionally add video frame checks for background and face visibility."
+    ],
+    "observations": [
+      {
+        "time": "03:50.01",
+        "quote": "Good? It's been so omni classes, right? Where were you?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "04:11.91",
+        "quote": "So, today we are gonna learn a topic called the Sukswal, okay? Sukswal means, it is like a position towards the end of the game, like, the opponent will be having a limited number of moves, like, what",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "04:46.43",
+        "quote": "Most of the positions will be like this. So, you are black here, and you can see that you can advance the king, right?",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "05:09.05",
+        "quote": "the king is supporting, they can easily promote, right? Likewise, all the positions are like this towards the end game, so you want to keep a good position so that at least you will get your draw. Let",
+        "note": "Sample transcript evidence"
+      },
+      {
+        "time": "05:22.42",
+        "quote": "Of course, the black will win this, because they will be able to play this and come to this square. So we won't allow the king to come here, so I can play the rook to c4 in this case, right?",
+        "note": "Sample transcript evidence"
+      }
+    ],
+    "metrics_used": [
+      "question_count=90",
+      "homework_mentions=0",
+      "longest_gap_sec=686.8",
+      "teacher_talk_ratio=0.439"
+    ],
+    "engine": "heuristic",
+    "model": "rules",
+    "llm_error": "LLM assessment failed (ollama/qwen2.5:7b-instruct). Last error: ValueError('LLM response did not contain a JSON object'). Check Ollama availability and model 'qwen2.5:7b-instruct'."
+  },
+  "features": {
+    "duration_sec": 2668.374,
+    "cue_count": 246,
+    "speaker_count": 8,
+    "teacher_speaker": "Aleena Ann Biby",
+    "teacher_talk_ratio": 0.439,
+    "student_talk_ratio": 0.561,
+    "question_count": 90,
+    "homework_mentions": 0,
+    "intro_signal_count": 3,
+    "camera_background_mentions": 1,
+    "encouragement_count": 0,
+    "longest_gap_sec": 686.8,
+    "avg_cue_duration_sec": 3.92,
+    "words_per_minute": 60.6,
+    "opening_excerpt": "[01:25.81] Aleena Ann Biby: Hello?\n[01:32.16] Ahna: Good evening, ma'am.\n[01:34.19] Aleena Ann Biby: Good evening, good evening!\n[01:35.70] Ahna: No, it's\n[01:39.62] Ahna: No, I'm not kidding.\n[01:45.68] Aleena Ann Biby: No kidding.\n[01:46.68] Ahna: Oh, there's…\n[01:47.65] Aleena Ann Biby: 30, landlord.\n[01:48.67] Ahna: Body left my neck.\n[01:50.39] Ahna: Capura misma.\n[01:53.36] Ahna: Recording Canderno.\n[01:56.47] Ahna: End of being a server.\n[02:00.19] Ahna: Anybody on the list?\n[02:01.56] Ahna: In la.\n[02:02.52] Aleena Ann Biby: that quota.\n[02:05.52] Aleena Ann Biby: correspond.\n[02:05.92] Ahna: I forget what?\n[02:08.83] Ahna: I've lost your love for you.\n[02:13.43] Ahna: Have you noted or removed them?\n[02:16.18] Ahna: Beautiful.\n[02:21.83] Aleena Ann Biby: come?\n[02:23.60] Aleena Ann Biby: Okay, shit.\n[02:25.08] Aleena Ann Biby: Ipagarpilla.\n[02:28.50] Ahna: Leave it off of.\n[02:36.67] Aleena Ann Biby: Hi, Narin!\n[02:40.10] Narain Madhav: Bye, then.\n[02:41.18] Aleena Ann Biby: Hi, how are you?\n[02:42.92] Narain Madhav: Good.\n[03:01.57] Aleena Ann Biby: I'm not sure.\n[03:16.23] Aleena Ann Biby: So, one more question.\n[03:18.96] Aleena Ann Biby: Have you learned Sukswang?\n[03:42.06] Aleena Ann Biby: Hello, Ahna!\n[03:45.65] HP: Hi, ma'am!\n[03:46.99] Aleena Ann Biby: Hi, how are you?\n[03:48.03] HP: God, how are you?\n[03:50.01] Aleena Ann Biby: Good? It's been so omni classes, right? Where were you?\n[03:53.45] HP: I was busy.\n[03:55.77] Aleena Ann Biby: Perfectly safe.\n[03:57.70] Aleena Ann Biby: Okay…\n[03:59.56] HP: Oh, thank you.\n[04:00.44] Aleena Ann Biby: Elaine!\n[04:06.03] Aleena Ann Biby: Not a system.\n[04:07.59] __ILAN__FADHI__: Telegram.\n[04:10.78] Aleena Ann Biby: Okay.\n[04:11.91] Aleena Ann Biby: So, today we are gonna learn a topic called the Sukswal, okay? Sukswal means, it is like a position towards the end of the game, like, the opponent will be having a limited number of moves, like, whatever they are gonna do, that will worsen their position itself. I will just show you an example.\n[04:32.81] Aleena Ann Biby: Thank you.\n[04:35.42] Aleena Ann Biby: One second.\n[04:44.77] Aleena Ann Biby: Yes.\n[04:46.43] Aleena Ann Biby: Most of the positions will be like this. So, you are black here, and you can see that you can advance the king, right?\n[04:55.31] Aleena Ann Biby: Similarly, we will advance the pawn here, so… Enough.\n[05:02.31] Aleena Ann Biby: Now, you can see that whatever the white plays, it is black winning rate. Because even though it comes in back of the pond.\n[05:09.05] Aleena Ann Biby: the king is supporting, they can easily promote, right? Likewise, all the positions are like this towards the end game, so you want to keep a good position so that at least you will get your draw. Let's see if I'm moving the king to this square, what happens?\n[05:22.42] Aleena Ann Biby: Of course, the black will win this, because they will be able to play this and come to this square. So we won't allow the king to come here, so I can play the rook to c4 in this case, right?\n[05:33.31] Aleena Ann Biby: Likewise, again, I can play d4. Likewise, either we will take opposition, or else we will advance our piece. Here, we would get advanced the king to\n[05:44.80] Aleena Ann Biby: E5.\n[05:46.83] Aleena Ann Biby: Now, what we can do? We can bring it to D. So, whatever moves they are gonna make, it doesn't matter. We will get this one, and we can promote it. This is called a suits one. Have you got a little bit idea?\n[05:59.94] __ILAN__FADHI__: Yes.",
+    "closing_excerpt": "[44:20.62] Aleena Ann Biby: Okay, so you guys can continue, okay? We'll see you next week, bye!",
+    "sample_quotes": [
+      "[03:50.01] Aleena Ann Biby: Good? It's been so omni classes, right? Where were you?",
+      "[04:11.91] Aleena Ann Biby: So, today we are gonna learn a topic called the Sukswal, okay? Sukswal means, it is like a position towards the end of the game, like, the opponent will be having a limited number of moves, like, whatever they are gonna do, that will worsen their position itself. I will just show you an example.",
+      "[04:46.43] Aleena Ann Biby: Most of the positions will be like this. So, you are black here, and you can see that you can advance the king, right?",
+      "[05:09.05] Aleena Ann Biby: the king is supporting, they can easily promote, right? Likewise, all the positions are like this towards the end game, so you want to keep a good position so that at least you will get your draw. Let's see if I'm moving the king to this square, what happens?",
+      "[05:22.42] Aleena Ann Biby: Of course, the black will win this, because they will be able to play this and come to this square. So we won't allow the king to come here, so I can play the rook to c4 in this case, right?",
+      "[05:46.83] Aleena Ann Biby: Now, what we can do? We can bring it to D. So, whatever moves they are gonna make, it doesn't matter. We will get this one, and we can promote it. This is called a suits one. Have you got a little bit idea?",
+      "[06:39.56] Aleena Ann Biby: Do you remember learning the checkmate using a rook and a king?",
+      "[06:43.72] Aleena Ann Biby: We learned right. When we were beginner, we learned this, right?",
+      "[06:53.26] Aleena Ann Biby: We will go behind the king, and when it reaches the here, there's only one option, like, to come forward of the king. That time, we will do the checkmate using the rook, right?",
+      "[08:37.10] Aleena Ann Biby: Here we have black, so we want to get an advantage in the… by using the suck swang. What will be the best move for black here?",
+      "[10:07.53] Aleena Ann Biby: Rook to h1 is the answer. Why? Because if the rook goes to H1, the king doesn't have… I mean, the bishop doesn't have any possible square to go, right?",
+      "[10:41.39] Aleena Ann Biby: Okay, so when the rook plays to H1, the bishop can't go to any square, because the rook is pinning the bishop, right? So the king has only one option, like, going back. Meanwhile, rook captures the bishop, and that's a checkmate also. That's why Rook to H1 is a good move, okay? Ahna, do you understand?",
+      "[11:22.16] Aleena Ann Biby: So what happened? The white has only one move, right? Moving S8, because the bishop is pinned by the rook, and if you capture it, it will be a checkmate. Likewise, your opponent will be having a limited number of moves, and each and every move is actually bad also.",
+      "[13:27.90] Aleena Ann Biby: In this, like the previous position, it won't happen, right? Why? Because if you do this in this position, it's actually stalemate, because the last position, the king got a square to move back to one square. In this position, there is no movements left. For Sukswa, we need at least one move left for them to do, okay?",
+      "[14:28.27] Aleena Ann Biby: So, you can try to attack from this side. Meanwhile, you can go here and capture the pieces, right?"
+    ]
+  },
+  "meta": {
+    "video": "B435 intermediate Part  - 2026-07-25.mp4",
+    "duration_sec": 2668.374,
+    "transcript_source": "vtt",
+    "segment_count": 246
+  }
+}
