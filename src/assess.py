@@ -8,6 +8,10 @@ import time
 from typing import Any
 import urllib.error
 import urllib.request
+from src.evidence_validation import (
+    calibrate_confidence,
+    review_assessment_evidence,
+)
 
 from src.features import ClassFeatures
 from src.vtt_parser import Segment
@@ -152,49 +156,114 @@ def _timestamp_to_seconds(value: str) -> float | None:
     return None
 
 
+
 def _validate_observations_against_transcript(
     result: dict[str, Any],
     segments: list[Segment],
     *,
     timestamp_tolerance_sec: float = 3.0,
+    strict: bool = True,
 ) -> None:
-    """Reject observations whose quotes or timestamps lack transcript support."""
-    for index, observation in enumerate(result["observations"]):
-        quote = _normalize_quote(observation["quote"])
+    """Validate transcript observations, optionally discarding unsupported ones."""
+    valid_observations = []
+    rejected_count = 0
+
+    for index, observation in enumerate(result.get("observations", [])):
+        quote = _normalize_quote(observation.get("quote", ""))
 
         if len(quote) < 8:
-            raise ValueError(
-                f"Observation {index} quote is too short to verify"
-            )
+            reason = f"Observation {index} quote is too short to verify"
+            if strict:
+                raise ValueError(reason)
+            print(f"[LLM] Rejecting observation {index}: quote too short")
+            rejected_count += 1
+            continue
 
+                
+        raw_quote = observation.get("quote", "").strip()
+
+        # First try the quote exactly as supplied.
         matching_segments = [
             segment
             for segment in segments
             if quote in _normalize_quote(segment.text)
         ]
 
+        # The LLM may include the speaker name, although the transcript stores
+        # the speaker separately from the segment text.
         if not matching_segments:
-            raise ValueError(
-                f"Observation {index} quote was not found in the transcript"
+            for segment in segments:
+                speaker = segment.speaker.strip()
+                if not speaker:
+                    continue
+
+                speaker_prefix = _normalize_quote(speaker)
+                normalized_quote = _normalize_quote(raw_quote)
+
+                if (
+                    speaker_prefix
+                    and normalized_quote.startswith(speaker_prefix)
+                ):
+                    quote_without_speaker = normalized_quote[len(speaker_prefix):]
+
+                    if quote_without_speaker in _normalize_quote(segment.text):
+                        matching_segments.append(segment)
+
+
+        if not matching_segments:
+            reason = f"Observation {index} quote was not found in the transcript"
+            if strict:
+                raise ValueError(reason)
+            print(
+                f"[LLM] Rejecting observation {index}: quote not found. "
+                f"Original quote={observation.get('quote', '')!r}; "
+                f"Normalized quote={quote!r}",
+                flush=True,
             )
-
-        timestamp = _timestamp_to_seconds(observation["time"])
-
-        if timestamp is None:
-            if observation["time"].strip().lower() != "unknown":
-                raise ValueError(
-                    f"Observation {index} has an invalid timestamp"
-                )
+            rejected_count += 1
             continue
 
-        if not any(
+        timestamp_text = observation.get("time", "").strip()
+        timestamp = _timestamp_to_seconds(timestamp_text)
+
+        if timestamp is None:
+            if timestamp_text.lower() != "unknown":
+                reason = (
+                    f"Observation {index} has an invalid timestamp: "
+                    f"{timestamp_text!r}"
+                )
+                if strict:
+                    raise ValueError(reason)
+                print(f"[LLM] Rejecting observation {index}: invalid timestamp")
+                rejected_count += 1
+                continue
+        elif not any(
             abs(segment.start - timestamp) <= timestamp_tolerance_sec
             for segment in matching_segments
         ):
-            raise ValueError(
-                f"Observation {index} timestamp does not match "
-                "the segment containing its quote"
-            )
+            reason = f"Observation {index} timestamp does not match its quote"
+            if strict:
+                raise ValueError(reason)
+            print(f"[LLM] Rejecting observation {index}: timestamp mismatch")
+            rejected_count += 1
+            continue
+
+        valid_observations.append(observation)
+
+    if strict:
+        return
+
+    result["observations"] = valid_observations
+
+    if rejected_count:
+        result["grounding_warning"] = (
+            f"Discarded {rejected_count} observation(s) that could not "
+            "be verified against the transcript."
+        )
+        print(
+            f"[LLM] Grounding validation removed {rejected_count} "
+            f"observation(s); retained {len(valid_observations)}"
+        )
 
 def _parse_json_content(raw: str) -> dict[str, Any]:
     raw = raw.strip()
@@ -242,6 +311,19 @@ def _build_user_message(features: ClassFeatures) -> str:
         quotes="\n".join(features.sample_quotes) or "(no quotes)",
     )
 
+def _format_metrics_used(features: ClassFeatures) -> list[str]:
+    """Return computed metrics with their actual values."""
+    return [
+        f"Duration: {features.duration_sec / 60:.1f} minutes",
+        f"Transcript cue count: {features.cue_count}",
+        f"Speaker count: {features.speaker_count}",
+        f"Teacher talk ratio: {features.teacher_talk_ratio:.1%}",
+        f"Student talk ratio: {features.student_talk_ratio:.1%}",
+        f"Question count: {features.question_count}",
+        f"Longest transcript gap: {features.longest_gap_sec:.1f} seconds",
+        f"Average cue duration: {features.avg_cue_duration_sec:.2f} seconds",
+        f"Words per minute: {features.words_per_minute:.1f}",
+    ]
 
 def _chat_assessment(settings: LlmSettings, user_msg: str) -> dict[str, Any]:
     # Use Ollama's native API for local inference.
@@ -367,7 +449,7 @@ def _chat_ollama_native(
             "format": ASSESSMENT_SCHEMA,
             "options": {
                 "temperature": 0,
-                "num_predict": 500 if attempt == 1 else 700,
+                "num_predict": 1000 if attempt == 1 else 1400,
             },
             "messages": messages,
         }
@@ -398,6 +480,7 @@ def _chat_ollama_native(
                 f"content length={len(content)}; "
                 f"prompt tokens={response_data.get('prompt_eval_count', 'n/a')}; "
                 f"output tokens={response_data.get('eval_count', 'n/a')}; "
+                f"done_reason={response_data.get('done_reason', 'n/a')}; "
                 f"done={response_data.get('done', 'n/a')}",
                 flush=True,
             )
@@ -461,17 +544,47 @@ def assess_with_llm(
                 )
 
             result = _chat_assessment(settings, request_msg)
+            result["metrics_used"] = _format_metrics_used(features)
 
             # Check the assessment structure before grounding observations.
-            _validate_assessment(result)
+            core_result = {
+                key: value
+                for key, value in result.items()
+                if key not in {"engine", "model"}
+            }
+            _validate_assessment(core_result)
 
+            
             if transcript_segments is not None:
                 _validate_observations_against_transcript(
                     result,
                     transcript_segments,
+                    strict=False,
+                )
+
+            # Apply conservative confidence calibration.
+            result["confidence"] = calibrate_confidence(
+                result["confidence"],
+                observation_count=len(result.get("observations", [])),
+                visual_evidence_available=False,
+            )
+
+            # Warn about claims that may exceed the supplied evidence.
+            # Review claims before returning the assessment.
+            result, claim_warnings = review_assessment_evidence(
+                result,
+                visual_evidence=None,
+            )
+
+            if claim_warnings:
+                print(
+                    f"[LLM] Evidence review flagged "
+                    f"{len(claim_warnings)} claim(s).",
+                    flush=True,
                 )
 
             return result
+
 
         except ValueError as exc:
             # Retry only validation failures, not ordinary request errors.

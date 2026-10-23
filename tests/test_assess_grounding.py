@@ -77,3 +77,39 @@ def test_unknown_timestamp_is_allowed(transcript):
     )
 
     _validate_observations_against_transcript(result, transcript)
+
+
+
+def test_observation_quote_with_speaker_prefix_is_accepted():
+    segments = [
+        Segment(
+            start=411.31,
+            end=413.98,
+            speaker="TSP Abhishek",
+            text=(
+                "Alright, have you remembered what are we doing "
+                "in the last class?"
+            ),
+        )
+    ]
+
+    result = {
+        "observations": [
+            {
+                "time": "06:51.31",
+                "quote": (
+                    "TSP Abhishek: Alright, have you remembered "
+                    "what are we doing in the last class?"
+                ),
+                "note": "The instructor checks recall of the previous class.",
+            }
+        ]
+    }
+
+    _validate_observations_against_transcript(
+        result,
+        segments,
+        strict=True,
+    )
+
+    assert len(result["observations"]) == 1
